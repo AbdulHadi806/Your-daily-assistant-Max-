@@ -8,7 +8,7 @@ def aiVoice(text):
     engine.say(text)
     engine.runAndWait()
     
-def userVoice():
+async def userVoice():
     r = sr.Recognizer() 
     try:
         with sr.Microphone() as source2:

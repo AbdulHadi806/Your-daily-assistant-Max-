@@ -3,9 +3,10 @@ import time
 import requests
 import json
 from plyer import notification
-from customModules.voice import aiVoice, userVoice
-import AppOpener 
+from customModules.voice import aiVoice
+import AppOpener
 import random
+import os
 
 API_SECRET="0a2e1437d3e4a66a60f3ee9481c88ace"
 
@@ -31,8 +32,7 @@ def trendingNews(topic):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        randomChoice = random.choice(data["articles"])
-        return randomChoice["title"]
+        return data["articles"][0]["title"]
     else:
         print(f"Error: {response.status_code}")
 
@@ -41,15 +41,12 @@ def writeProcesses(data):
         "user_name": data
     }
     json_object = json.dumps(data)
-    with open(f"./notificationApp/src/data/asdas.json", "w") as file:
+    json_file_path = os.path.join(os.path.dirname(__file__), '..', 'data')
+    with open(f"{json_file_path}/{data["user_name"]}.json", "w") as file:
         file.write(json_object)
         
-def openApp():
-    aiVoice("What app do you want to open")
-    appName = userVoice()
-    AppOpener.open(appName)
+def openApp(name):
+    AppOpener.open(name)
     
-def closeApp():
-    aiVoice("Sure, what is the app name")
-    appName = userVoice()
+def closeApp(appName):
     AppOpener.close(appName)
