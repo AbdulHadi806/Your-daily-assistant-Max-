@@ -1,8 +1,17 @@
-# Max Basic Voice assistant with Python
+# Max Your Voice Assistant
 
-## How to run
-- git clone repo-download-link
-- install python in your system
-- install packages\
+## Overview
+Max Your Voice Assistant is a personal project designed to enable users to open/close apps on their desktop, inquire about the time, and retrieve the latest news on topics of interest. Please note that this project is still a work in progress, so expect bugs and errors.
 
-Enjoy
+## Technologies Used
+- Python
+
+## How to Run the App
+1. Clone the project repository.
+2. Navigate to the project directory.
+3. Install dependencies using `pip`.
+4. Start the application.
+5. Enjoy and stay Safe! 🙂
+
+### Developer Info
+- My Email: abdul.806@yahoo.com
