@@ -9,9 +9,15 @@ Max Your Voice Assistant is a personal project designed to enable users to open/
 ## How to Run the App
 1. Clone the project repository.
 2. Navigate to the project directory.
-3. Install modules using `pip`.
+3. Install modules using `pip install <module name>`.
 4. Start the application.
 5. Enjoy and stay Safe! 🙂
+
+## Modules Used
+- pyttsx3
+- speech_recognition
+- AppOpener
+- notification
 
 ### Developer Info
 - My Email: abdul.806@yahoo.com
