@@ -13,7 +13,7 @@ Max Your Voice Assistant is a personal project designed to enable users to open/
 4. Start the application.
 5. Enjoy and stay Safe! 🙂
 
-## Modules Used
+## External Modules Used
 - pyttsx3
 - speech_recognition
 - AppOpener
